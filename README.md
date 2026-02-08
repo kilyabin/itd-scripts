@@ -36,12 +36,12 @@ cd itd-scripts
 ```bash
 pip install -r requirements.txt
 ```
-
-> Если `requirements.txt` отсутствует, убедитесь, что установлена библиотека `itd`:
+или
 
 ```bash
-pip install itd
+pip install itd-sdk
 ```
+(пока одна зависимость xD)
 
 ## Использование
 
@@ -101,7 +101,7 @@ python itd-change-banner.py --token YOUR_REFRESH_TOKEN --file banner.png --name 
 
 ```bash
 # Загрузка файла и установка баннера через Python скрипт
-python upload_and_set_banner.py --token $ITD_TOKEN --file /home/user/banner.jpg
+python itd-change-banner.py --token $ITD_TOKEN --file /home/user/banner.jpg
 ```
 
 ```python
